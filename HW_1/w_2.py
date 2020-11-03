@@ -15,5 +15,5 @@ try:
         d2 = d % 10
         result = f"{b1}{b2}:{c1}{c2}:{d1}{d2}"
         print(result)
-except ValueError:
-    print('Please Enter integer positive number')
+except ValueError as err:
+    print(f'Ошибка: {err}')
